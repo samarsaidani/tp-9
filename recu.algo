@@ -1,0 +1,23 @@
+
+
+
+
+
+
+FUNCTION palindrome(mot:STRING):boolean 
+VAR
+    
+BEGIN
+    IF (mot.lenght = 0 or mot.lenght = 1) THEN
+        returm true
+    ELSE
+      IF (mot[0] = mot[mot.lenght-1]) THEN
+      return palindrome(mot[1,mot.lenght-1])
+      ELSE
+       returm false
+      END_IF
+    END_IF
+END
+
+   
+    
